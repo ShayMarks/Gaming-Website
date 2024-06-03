@@ -1,0 +1,138 @@
+/* כללי */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #6c5ce7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#settings {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+select, button {
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.game-board {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.card .front img, .card .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card .front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.card .back {
+  background-color: #6c5ce7;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+footer {
+  background-color: #2d3436;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+#result-container {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#result-message {
+  margin-bottom: 20px;
+}

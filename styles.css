@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6c5ce7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+main {
+  padding: 20px;
+}
+
+ul.game-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+li.game-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+}
+
+li.game-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+li.game-item a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #6c5ce7;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+li.game-item a:hover {
+  color: #fff;
+  background-color: #6c5ce7;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer {
+  background-color: #2d3436;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.footer-section h3 {
+  margin: 10px 0;
+}
+
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-section .social-links a {
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.footer-section .social-links a:hover {
+  color: #6c5ce7;
+  transition: color 0.3s;
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  ul.game-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  li.game-item {
+      width: 80%;
+  }
+
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-section {
+      margin-bottom: 20px;
+  }
+}

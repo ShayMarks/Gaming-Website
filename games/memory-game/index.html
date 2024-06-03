@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+    <main>
+        <div id="settings">
+            <label for="board-size">Select Board Size:</label>
+            <select id="board-size">
+                <option value="2">2 x 2</option>
+                <option value="4" selected>4 x 4</option>
+                <option value="6">6 x 6</option>
+            </select>
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="game-container" class="hidden">
+            <div class="game-info">
+                <p>Time: <span id="timer">00:00</span></p>
+                <p>Best Time: <span id="best-time">--:--</span></p>
+            </div>
+            <div class="game-board" id="game-board"></div>
+        </div>
+        <div id="result-container" class="hidden">
+            <p id="result-message"></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gaming Website. All rights reserved.</p>
+    </footer>
+    <script src="memory-game.js"></script>
+</body>
+</html>

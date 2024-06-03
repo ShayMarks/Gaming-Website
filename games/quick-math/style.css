@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+#game-container {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+}
+
+#problem {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6c5ce7;
+}
+
+#score, #timer {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #6c5ce7;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 1rem);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #6c5ce7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5b4ac4;
+}
+
+@media (max-width: 600px) {
+    #game-container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #problem {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #score, #timer {
+        font-size: 1rem;
+    }
+}
